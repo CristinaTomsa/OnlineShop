@@ -16,14 +16,15 @@
         <entry key="app/src/main/res/drawable-v24/ic_minus.xml" value="0.1125" />
         <entry key="app/src/main/res/drawable-v24/ic_shopping_basket.xml" value="0.1515" />
         <entry key="app/src/main/res/drawable-v24/ic_shopping_cart_black_24dp.xml" value="0.1125" />
+        <entry key="app/src/main/res/drawable/et_custom2.xml" value="0.207" />
         <entry key="app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.1125" />
         <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2135" />
         <entry key="app/src/main/res/layout/activity_cart.xml" value="0.17395833333333333" />
         <entry key="app/src/main/res/layout/activity_dashbord.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.24259259259259258" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.28177083333333336" />
         <entry key="app/src/main/res/layout/activity_product.xml" value="0.17395833333333333" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.17314814814814813" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_search_product.xml" value="0.2037037037037037" />
         <entry key="app/src/main/res/layout/activity_subcategory.xml" value="0.25" />
         <entry key="app/src/main/res/layout/app_nav_header.xml" value="0.28177083333333336" />
@@ -32,7 +33,7 @@
         <entry key="app/src/main/res/layout/fragment_subcategory.xml" value="0.13645833333333332" />
         <entry key="app/src/main/res/layout/view_holder_cart.xml" value="0.28177083333333336" />
         <entry key="app/src/main/res/layout/view_holder_category.xml" value="0.17314814814814813" />
-        <entry key="app/src/main/res/layout/view_holder_products.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/view_holder_products.xml" value="0.14074074074074075" />
         <entry key="app/src/main/res/layout/view_holder_subcatecory.xml" value="0.335" />
         <entry key="app/src/main/res/layout/view_holder_subcategory_products.xml" value="0.1" />
         <entry key="app/src/main/res/menu/nav_menu.xml" value="0.28177083333333336" />

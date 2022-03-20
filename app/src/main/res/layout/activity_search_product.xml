@@ -5,8 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.SearchProductActivity"
-    android:padding="16dp"
-    android:background="#CBD9E4">
+    android:background="#E1E7EC">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/app_bar">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_marginEnd="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <EditText
         android:id="@+id/edt_search_product"
@@ -15,9 +39,10 @@
         app:layout_constraintWidth_percent="0.8"
         android:hint="Search product"
         android:padding="16dp"
+        android:layout_marginLeft="16dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
 
     <ImageView
         android:id="@+id/iv_search"
@@ -26,8 +51,8 @@
         android:background="@drawable/ic_baseline_search_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/edt_search_product"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.16" />
+        app:layout_constraintWidth_percent="0.16"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar"/>
 
     <ImageView
         android:id="@+id/iv_product_photo"
@@ -37,7 +62,8 @@
         app:layout_constraintTop_toBottomOf="@+id/edt_search_product"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_percent=".25"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"/>
 
     <TextView
         android:id="@+id/tv_product_name"
@@ -53,30 +79,29 @@
         android:layout_marginTop="40dp"/>
 
 
-
     <TextView
         android:id="@+id/tv_product_price"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:text="Price"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toEndOf="@+id/iv_product_photo"
         app:layout_constraintTop_toBottomOf="@+id/tv_product_name"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintWidth_percent="0.5"/>
+        app:layout_constraintWidth_percent="0.5"
+        tools:text="Price" />
 
     <TextView
         android:id="@+id/tv_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@+id/iv_product_photo"
-        app:layout_constraintTop_toBottomOf="@+id/tv_product_price"
-        tools:text="Description"
-        android:maxLines="4"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintWidth_percent=".7"/>
+        android:maxLines="4"
+        app:layout_constraintStart_toEndOf="@+id/iv_product_photo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_product_price"
+        app:layout_constraintWidth_percent=".65"
+        tools:text="Description" />
 
 <!--    <LinearLayout-->
 <!--        android:layout_marginTop="8dp"-->

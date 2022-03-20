@@ -5,16 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.example.onlineshop.R
-import com.example.onlineshop.adapter.FragmentAdapter
 import com.example.onlineshop.adapter.ProductsViewPagerAdapter
-import com.example.onlineshop.adapter.SubcategoryAdapter
-import com.example.onlineshop.data.Category
 import com.example.onlineshop.data.Category.Companion.KEY_CATEGORY
 import com.example.onlineshop.data.Subcategory
 import com.example.onlineshop.data.SubcategoryResponse

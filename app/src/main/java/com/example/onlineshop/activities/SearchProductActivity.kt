@@ -1,5 +1,6 @@
 package com.example.onlineshop.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.example.onlineshop.R
 import com.example.onlineshop.adapter.ProductAdapter
 import com.example.onlineshop.data.Product
@@ -26,10 +28,14 @@ class SearchProductActivity : AppCompatActivity() {
         binding = ActivitySearchProductBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        queue = Volley.newRequestQueue(baseContext)
 
         binding.ivSearch.setOnClickListener {
             searchProduct()
+        }
+
+        binding.ivBack.setOnClickListener {
+            startActivity(Intent(baseContext, DashboardActivity::class.java))
         }
     }
 

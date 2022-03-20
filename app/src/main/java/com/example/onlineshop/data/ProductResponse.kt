@@ -11,7 +11,7 @@ data class Product(
     val average_rating: String?,
     val category_id: String?,
     val category_name: String?,
-    val description: String?,
+    val description: String,
     val price: Double,
     val product_id: String?,
     val product_image_url: String,
