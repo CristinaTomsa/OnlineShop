@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineShop">
         <activity
+            android:name=".activities.AddressActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.SearchProductActivity"
             android:exported="false" />
         <activity
