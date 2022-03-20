@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SearchProductActivity"
+    android:padding="16dp"
+    android:background="#CBD9E4">
+
+    <EditText
+        android:id="@+id/edt_search_product"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.8"
+        android:hint="Search product"
+        android:padding="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_search_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edt_search_product"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.16" />
+
+    <ImageView
+        android:id="@+id/iv_product_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="2:4"
+        app:layout_constraintTop_toBottomOf="@+id/edt_search_product"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent=".25"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Product Name"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/iv_product_photo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edt_search_product"
+        app:layout_constraintWidth_percent="0.5"
+        android:layout_marginTop="40dp"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Price"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toEndOf="@+id/iv_product_photo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_product_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintWidth_percent="0.5"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/iv_product_photo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_product_price"
+        tools:text="Description"
+        android:maxLines="4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintWidth_percent=".7"/>
+
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="#cacaca"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_description"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content" >-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_minus"-->
+<!--            android:src="@drawable/ic_minus"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_qtyu"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:text="1"-->
+<!--            android:minWidth="48dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--        <ImageView-->
+<!--            android:src="@drawable/ic_add"-->
+<!--            android:id="@+id/iv_add"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

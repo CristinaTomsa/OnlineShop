@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">OnlineShop</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="not_register">Not registread? click here</string>
+    <string name="register">register</string>
+    <string name="already_register">Already registered? click here</string>
+    <string name="your_full_name">Full Name</string>
+    <string name="create_an_account">Register</string>
+    <string name="your_mobile_no">Mobile Number</string>
+    <string name="e_mail">Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
