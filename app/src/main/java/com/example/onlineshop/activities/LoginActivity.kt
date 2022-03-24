@@ -8,6 +8,7 @@ import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
+import com.example.onlineshop.activities.Constants.PREF_NAME
 import com.example.onlineshop.databinding.ActivityLoginBinding
 import org.json.JSONObject
 
@@ -61,14 +62,16 @@ class LoginActivity : AppCompatActivity() {
                     val full_name = user.getString("full_name")
                     val mobile_no= user.getString("mobile_no")
                     val email_id = user.getString("email_id")
+                    val userId = user.getString("user_id")
 
 
-                    val pref = getSharedPreferences("login_details", AppCompatActivity.MODE_PRIVATE)
+                    val pref = getSharedPreferences(PREF_NAME, AppCompatActivity.MODE_PRIVATE)
                     val editor = pref.edit()
 
                     editor.putString("name", full_name)
                     editor.putString("mobile", mobile_no)
                     editor.putString("email", email_id)
+                    editor.putString("user_id", userId)
                     editor.apply()
 
 

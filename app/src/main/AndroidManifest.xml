@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineShop">
         <activity
+            android:name=".activities.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OrderConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AddAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PaymentActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.AddressActivity"
             android:exported="false" />
         <activity

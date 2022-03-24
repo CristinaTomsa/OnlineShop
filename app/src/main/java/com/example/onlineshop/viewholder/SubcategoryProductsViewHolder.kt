@@ -1,5 +1,6 @@
 package com.example.onlineshop.viewholder
 
+import android.content.Intent
 import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -8,7 +9,11 @@ import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.onlineshop.activities.Constants
+import com.example.onlineshop.activities.ProductDetailActivity
+import com.example.onlineshop.activities.SubcategoryActivity
 import com.example.onlineshop.adapter.ProductAdapter
+import com.example.onlineshop.data.Category
+import com.example.onlineshop.data.Product
 import com.example.onlineshop.data.ProductResponse
 import com.example.onlineshop.data.Subcategory
 import com.example.onlineshop.databinding.ViewHolderSubcategoryProductsBinding
@@ -34,6 +39,13 @@ class SubcategoryProductsViewHolder(val binding: ViewHolderSubcategoryProductsBi
 
                     val adapter = ProductAdapter(response.products)
                     binding.rvProducts.layoutManager = LinearLayoutManager(binding.root.context)
+//
+                    adapter.setOnOptionSelectedListener { product, i ->
+                        val intent = Intent(binding.root.context, ProductDetailActivity::class.java)
+                        intent.putExtra(Product.KEY_PRODUCT, product.product_id)
+                        binding.root.context.startActivity(intent)
+ //
+                    }
 
                     binding.rvProducts.adapter = adapter
                 }

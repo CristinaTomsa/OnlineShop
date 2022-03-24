@@ -87,6 +87,15 @@ class DashboardActivity : AppCompatActivity() {
             R.id.nav_my_cart ->{
                 startActivity(Intent(baseContext, CartActivity::class.java))
             }
+            R.id.nav_profile ->{
+                startActivity(Intent(baseContext,ProfileActivity::class.java))
+            }
+            R.id.nav_my_order ->{
+                startActivity(Intent(this, OrderActivity::class.java))
+            }
+            R.id.nav_home ->{
+                startActivity(Intent(this, DashboardActivity::class.java))
+            }
 
         }
 
